@@ -146,6 +146,7 @@ class EvernoteStrategy extends OpauthStrategy
 
             if ($results !== false && !empty($results['oauth_token'])) {
                 $this->auth = array(
+                    'uid' => $results['edam_userId'],
                     'credentials' => array(
                         'token' => $results['oauth_token'],
                         'secret' => $results['oauth_token_secret']
