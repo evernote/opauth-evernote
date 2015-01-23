@@ -152,6 +152,7 @@ class EvernoteStrategy extends OpauthStrategy
                         'secret' => $results['oauth_token_secret']
                     ),
                     'info' => array(
+                        'name' => null,
                         'shardId' => $results['edam_shard'],
                         'userId' => $results['edam_userId'],
                         'expires' => $results['edam_expires'],
